@@ -1,0 +1,16 @@
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku.Hardware.csproj.AssemblyReference.cache
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku.Hardware.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku.Hardware.AssemblyInfoInputs.cache
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku.Hardware.AssemblyInfo.cs
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku.Hardware.csproj.CoreCompileInputs.cache
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku.Hardware.sourcelink.json
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\bin\Release\net8.0\Shizuku.Hardware.deps.json
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\bin\Release\net8.0\Shizuku.Hardware.dll
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\bin\Release\net8.0\Shizuku.Hardware.pdb
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\bin\Release\net8.0\Shizuku.Core.dll
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\bin\Release\net8.0\Shizuku.Core.pdb
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku..4CFEF1FD.Up2Date
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku.Hardware.dll
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\refint\Shizuku.Hardware.dll
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\Shizuku.Hardware.pdb
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Hardware\obj\Release\net8.0\ref\Shizuku.Hardware.dll

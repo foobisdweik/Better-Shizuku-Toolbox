@@ -1,0 +1,80 @@
+name: Build Cross-Platform Binaries
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET 8
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore BetterShizukuToolbox.sln
+
+    - name: Build solution
+      run: dotnet build BetterShizukuToolbox.sln -c Release --no-restore
+
+    - name: Run tests
+      run: dotnet test tests/Shizuku.Core.Tests/Shizuku.Core.Tests.csproj -c Release --no-build --verbosity normal
+
+  publish:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET 8
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Publish Linux x64
+      run: >
+        dotnet publish src/Shizuku.App/Shizuku.App.csproj
+        -c Release
+        -r linux-x64
+        --self-contained true
+        -p:PublishSingleFile=true
+        -p:IncludeNativeLibrariesForSelfExtract=true
+        -p:PublishTrimmed=false
+        -o dist/linux-x64
+
+    - name: Publish Windows x64
+      run: >
+        dotnet publish src/Shizuku.App/Shizuku.App.csproj
+        -c Release
+        -r win-x64
+        --self-contained true
+        -p:PublishSingleFile=true
+        -p:IncludeNativeLibrariesForSelfExtract=true
+        -p:PublishReadyToRun=true
+        -o dist/win-x64
+
+    - name: Publish Windows ARM64
+      run: >
+        dotnet publish src/Shizuku.App/Shizuku.App.csproj
+        -c Release
+        -r win-arm64
+        --self-contained true
+        -p:PublishSingleFile=true
+        -p:IncludeNativeLibrariesForSelfExtract=true
+        -o dist/win-arm64
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: shizuku-suite-binaries
+        path: dist/
+        retention-days: 30

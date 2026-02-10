@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Shizuku.App.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="600"
+             x:Class="Shizuku.App.Views.PdListenerView"
+             x:DataType="vm:PdListenerViewModel">
+
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="8" Spacing="12">
+            <Button Content="Toggle Capture"
+                    Command="{Binding ToggleCaptureCommand}" Width="130"/>
+            <Button Content="Clear" Command="{Binding ClearPacketsCommand}"/>
+            <TextBlock VerticalAlignment="Center" Opacity="0.5"
+                       Text="{Binding Packets.Count, StringFormat=Packets: {0}}"/>
+        </StackPanel>
+
+        <Grid ColumnDefinitions="*,300" Margin="8">
+            <!-- Packet list -->
+            <DataGrid Grid.Column="0" ItemsSource="{Binding Packets}"
+                      SelectedItem="{Binding SelectedPacket}"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      GridLinesVisibility="Horizontal"
+                      HeadersVisibility="Column">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Time" Binding="{Binding Timestamp}" Width="120"/>
+                    <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="80"/>
+                    <DataGridTextColumn Header="Message" Binding="{Binding Message}" Width="*"/>
+                    <DataGridTextColumn Header="Objects" Binding="{Binding ObjectCount}" Width="60"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Detail panel -->
+            <Border Grid.Column="1" Classes="card" Margin="4,0,0,0">
+                <ScrollViewer>
+                    <TextBlock Text="{Binding SelectedPacket.Details}"
+                               FontFamily="Consolas, JetBrains Mono, monospace"
+                               FontSize="12"
+                               TextWrapping="Wrap"/>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </DockPanel>
+</UserControl>

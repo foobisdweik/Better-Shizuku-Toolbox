@@ -1,0 +1,66 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Shizuku.App.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+        x:Class="Shizuku.App.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="Better Shizuku Toolbox"
+        MinWidth="900" MinHeight="500"
+        Width="1200" Height="700">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <DockPanel LastChildFill="True">
+        <!-- Status Bar (bottom) -->
+        <Border Classes="statusbar" DockPanel.Dock="Bottom">
+            <Grid ColumnDefinitions="*,Auto,Auto,Auto">
+                <TextBlock Grid.Column="0" Text="{Binding ConnectionStatus}"
+                           VerticalAlignment="Center" FontSize="12" Opacity="0.8"/>
+                <TextBlock Grid.Column="1" Text="{Binding SampleRateText}"
+                           VerticalAlignment="Center" FontSize="12" Opacity="0.8" Margin="16,0"/>
+                <TextBlock Grid.Column="2" Text="{Binding TemperatureText}"
+                           VerticalAlignment="Center" FontSize="12" Opacity="0.8" Margin="16,0"/>
+            </Grid>
+        </Border>
+
+        <!-- Sidebar (left) -->
+        <Border Classes="sidebar" DockPanel.Dock="Left">
+            <StackPanel Orientation="Vertical" Margin="0,8,0,0">
+                <Button Classes="nav-btn" Content="M"
+                        ToolTip.Tip="Meter"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{Binding Dashboard}"/>
+                <Button Classes="nav-btn" Content="C"
+                        ToolTip.Tip="Chart"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{Binding Logger}"/>
+                <Button Classes="nav-btn" Content="R"
+                        ToolTip.Tip="Ripple"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{Binding RippleScope}"/>
+                <Button Classes="nav-btn" Content="P"
+                        ToolTip.Tip="PD Listen"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{Binding PdListener}"/>
+                <Button Classes="nav-btn" Content="S"
+                        ToolTip.Tip="Scripts"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{Binding ScriptEditor}"/>
+                <!-- spacer pushes settings to the bottom -->
+                <Panel VerticalAlignment="Stretch" />
+                <Button Classes="nav-btn" Content="*"
+                        ToolTip.Tip="Settings"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{Binding Settings}"
+                        VerticalAlignment="Bottom"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Main Content Area -->
+        <ContentControl Content="{Binding CurrentView}" Margin="8"/>
+    </DockPanel>
+</Window>

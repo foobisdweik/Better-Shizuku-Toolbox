@@ -1,0 +1,26 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Shizuku.App.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="600"
+             x:Class="Shizuku.App.Views.LoggerView"
+             x:DataType="vm:LoggerViewModel">
+
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="8" Spacing="12">
+            <Button Content="Toggle Recording"
+                    Command="{Binding ToggleRecordingCommand}" Width="140"/>
+            <TextBlock VerticalAlignment="Center"
+                       Text="{Binding RowsWritten, StringFormat=Rows: {0:N0}}"/>
+            <TextBlock VerticalAlignment="Center" Opacity="0.5"
+                       Text="{Binding LogFilePath, StringFormat=File: {0}}"/>
+        </StackPanel>
+
+        <!-- Chart area placeholder -->
+        <Border Classes="card" Margin="8">
+            <TextBlock Text="[Scrolling strip chart will be rendered here via ScottPlot]"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.4"/>
+        </Border>
+    </DockPanel>
+</UserControl>

@@ -1,0 +1,12 @@
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\bin\Release\net8.0\Shizuku.Core.deps.json
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\bin\Release\net8.0\Shizuku.Core.dll
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\bin\Release\net8.0\Shizuku.Core.pdb
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\Shizuku.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\Shizuku.Core.AssemblyInfoInputs.cache
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\Shizuku.Core.AssemblyInfo.cs
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\Shizuku.Core.csproj.CoreCompileInputs.cache
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\Shizuku.Core.sourcelink.json
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\Shizuku.Core.dll
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\refint\Shizuku.Core.dll
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\Shizuku.Core.pdb
+C:\Users\Foobis\Documents\project\Better-Shizuku-Toolbox\src\Shizuku.Core\obj\Release\net8.0\ref\Shizuku.Core.dll

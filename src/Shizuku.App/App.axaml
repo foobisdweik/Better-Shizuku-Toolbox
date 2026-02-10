@@ -1,0 +1,26 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Shizuku.App.App"
+             xmlns:local="using:Shizuku.App"
+             RequestedThemeVariant="Dark">
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <FluentTheme />
+        <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"/>
+        <StyleInclude Source="avares://Shizuku.App/Themes/DarkTheme.axaml" />
+    </Application.Styles>
+
+    <Application.Resources>
+        <!-- Brand colours referenced throughout the app -->
+        <Color x:Key="VoltageColor">#FFD700</Color>
+        <Color x:Key="CurrentColor">#00BFFF</Color>
+        <Color x:Key="PowerColor">#FF4500</Color>
+        <Color x:Key="SurfaceColor">#1E1E1E</Color>
+        <Color x:Key="SurfaceLightColor">#2D2D2D</Color>
+        <Color x:Key="AccentColor">#5B9BD5</Color>
+    </Application.Resources>
+</Application>

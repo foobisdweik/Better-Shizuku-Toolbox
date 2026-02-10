@@ -1,0 +1,40 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Shizuku.App.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="600"
+             x:Class="Shizuku.App.Views.ScriptEditorView"
+             x:DataType="vm:ScriptEditorViewModel">
+
+    <Grid RowDefinitions="*,Auto,200">
+        <!-- Script editor (placeholder TextBox; will be replaced with AvaloniaEdit for syntax highlighting) -->
+        <TextBox Grid.Row="0"
+                 Text="{Binding ScriptText}"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 FontFamily="Consolas, JetBrains Mono, monospace"
+                 FontSize="13"
+                 TextWrapping="NoWrap"
+                 Margin="8"/>
+
+        <!-- Toolbar -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="8,4" Spacing="8">
+            <Button Content="Run" Command="{Binding RunScriptCommand}" Width="80"/>
+            <Button Content="Stop" Command="{Binding StopScriptCommand}" Width="80"/>
+            <Button Content="Clear" Command="{Binding ClearConsoleCommand}" Width="80"/>
+            <TextBlock VerticalAlignment="Center" Opacity="0.5"
+                       Text="{Binding IsRunning, StringFormat=Running: {0}}"/>
+        </StackPanel>
+
+        <!-- Console output -->
+        <Border Grid.Row="2" Classes="card" Margin="8,0,8,8">
+            <ScrollViewer>
+                <TextBlock Text="{Binding ConsoleOutput}"
+                           FontFamily="Consolas, JetBrains Mono, monospace"
+                           FontSize="12"
+                           TextWrapping="NoWrap"/>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

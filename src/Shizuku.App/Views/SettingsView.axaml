@@ -1,0 +1,31 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Shizuku.App.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="600"
+             x:Class="Shizuku.App.Views.SettingsView"
+             x:DataType="vm:SettingsViewModel">
+
+    <StackPanel Margin="16" Spacing="12" MaxWidth="500">
+        <TextBlock Text="Settings" Classes="heading"/>
+
+        <TextBlock Text="Serial Port" FontSize="13" Opacity="0.7"/>
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <ComboBox ItemsSource="{Binding AvailablePorts}"
+                      SelectedItem="{Binding SelectedPort}"
+                      Width="200"/>
+            <Button Content="Refresh" Command="{Binding RefreshPortsCommand}"/>
+        </StackPanel>
+
+        <TextBlock Text="Baud Rate" FontSize="13" Opacity="0.7" Margin="0,8,0,0"/>
+        <TextBox Text="{Binding BaudRate}" Width="200" HorizontalAlignment="Left"/>
+
+        <Button Content="Toggle Connection"
+                Command="{Binding ToggleConnectionCommand}"
+                Width="200" Margin="0,16,0,0"/>
+
+        <TextBlock Opacity="0.4" FontSize="11"
+                   Text="{Binding IsConnected, StringFormat=Connected: {0}}"/>
+    </StackPanel>
+</UserControl>

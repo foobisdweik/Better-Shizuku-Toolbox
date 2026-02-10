@@ -1,0 +1,85 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Shizuku.App.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="600"
+             x:Class="Shizuku.App.Views.DashboardView"
+             x:DataType="vm:DashboardViewModel">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+        <TextBlock Grid.Row="0" Text="Dashboard" Classes="heading" Margin="8,0"/>
+
+        <!-- Measurement cards -->
+        <WrapPanel Grid.Row="1" Orientation="Horizontal" Margin="4">
+            <!-- Voltage Card -->
+            <Border Classes="card" Width="260">
+                <StackPanel>
+                    <TextBlock Text="VOLTAGE" FontSize="11" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Classes="value-large" Text="{Binding VoltageV, StringFormat={}{0:F4}}"
+                                   Foreground="#FFD700"/>
+                        <TextBlock Classes="value-unit" Text="V" Foreground="#FFD700"/>
+                    </StackPanel>
+                    <TextBlock FontSize="11" Opacity="0.5"
+                               Text="{Binding MinVoltageV, StringFormat=Min: {0:F4}V}"/>
+                    <TextBlock FontSize="11" Opacity="0.5"
+                               Text="{Binding MaxVoltageV, StringFormat=Max: {0:F4}V}"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Current Card -->
+            <Border Classes="card" Width="260">
+                <StackPanel>
+                    <TextBlock Text="CURRENT" FontSize="11" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Classes="value-large" Text="{Binding CurrentA, StringFormat={}{0:F4}}"
+                                   Foreground="#00BFFF"/>
+                        <TextBlock Classes="value-unit" Text="A" Foreground="#00BFFF"/>
+                    </StackPanel>
+                    <TextBlock FontSize="11" Opacity="0.5"
+                               Text="{Binding MinCurrentA, StringFormat=Min: {0:F4}A}"/>
+                    <TextBlock FontSize="11" Opacity="0.5"
+                               Text="{Binding MaxCurrentA, StringFormat=Max: {0:F4}A}"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Power Card -->
+            <Border Classes="card" Width="260">
+                <StackPanel>
+                    <TextBlock Text="POWER" FontSize="11" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Classes="value-large" Text="{Binding PowerW, StringFormat={}{0:F4}}"
+                                   Foreground="#FF4500"/>
+                        <TextBlock Classes="value-unit" Text="W" Foreground="#FF4500"/>
+                    </StackPanel>
+                    <TextBlock FontSize="11" Opacity="0.5"
+                               Text="{Binding AccumulatedMwh, StringFormat=Energy: {0:F1} mWh}"/>
+                    <TextBlock FontSize="11" Opacity="0.5"
+                               Text="{Binding AccumulatedMah, StringFormat=Charge: {0:F1} mAh}"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Temperature Card -->
+            <Border Classes="card" Width="260">
+                <StackPanel>
+                    <TextBlock Text="TEMPERATURE" FontSize="11" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Classes="value-large" Text="{Binding TemperatureC, StringFormat={}{0:F1}}"/>
+                        <TextBlock Classes="value-unit" Text="°C"/>
+                    </StackPanel>
+                    <TextBlock FontSize="11" Opacity="0.5"
+                               Text="{Binding SampleCount, StringFormat=Samples: {0:N0}}"/>
+                    <TextBlock FontSize="11" Opacity="0.5"
+                               Text="{Binding ElapsedText, StringFormat=Elapsed: {0}}"/>
+                </StackPanel>
+            </Border>
+        </WrapPanel>
+
+        <!-- Placeholder for ScottPlot chart -->
+        <Border Grid.Row="2" Classes="card" Height="200" Margin="4">
+            <TextBlock Text="[Trend chart will be rendered here via ScottPlot]"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.4"/>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "pM3RGGy2oXo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\tools\\Shizuku.Benchmarks\\Shizuku.Benchmarks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.android-arm.runtime.native.system.io.ports\\10.0.2\\runtime.android-arm.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.android-arm64.runtime.native.system.io.ports\\10.0.2\\runtime.android-arm64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.android-x64.runtime.native.system.io.ports\\10.0.2\\runtime.android-x64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.android-x86.runtime.native.system.io.ports\\10.0.2\\runtime.android-x86.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.linux-arm.runtime.native.system.io.ports\\10.0.2\\runtime.linux-arm.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.linux-arm64.runtime.native.system.io.ports\\10.0.2\\runtime.linux-arm64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.linux-bionic-arm64.runtime.native.system.io.ports\\10.0.2\\runtime.linux-bionic-arm64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.linux-bionic-x64.runtime.native.system.io.ports\\10.0.2\\runtime.linux-bionic-x64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.linux-musl-arm.runtime.native.system.io.ports\\10.0.2\\runtime.linux-musl-arm.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.linux-musl-arm64.runtime.native.system.io.ports\\10.0.2\\runtime.linux-musl-arm64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.linux-musl-x64.runtime.native.system.io.ports\\10.0.2\\runtime.linux-musl-x64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.linux-x64.runtime.native.system.io.ports\\10.0.2\\runtime.linux-x64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.maccatalyst-arm64.runtime.native.system.io.ports\\10.0.2\\runtime.maccatalyst-arm64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.maccatalyst-x64.runtime.native.system.io.ports\\10.0.2\\runtime.maccatalyst-x64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.native.system.io.ports\\10.0.2\\runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.osx-arm64.runtime.native.system.io.ports\\10.0.2\\runtime.osx-arm64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\runtime.osx-x64.runtime.native.system.io.ports\\10.0.2\\runtime.osx-x64.runtime.native.system.io.ports.10.0.2.nupkg.sha512",
+    "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget\\system.io.ports\\10.0.2\\system.io.ports.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

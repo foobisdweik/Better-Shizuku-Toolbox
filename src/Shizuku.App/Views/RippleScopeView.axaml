@@ -1,0 +1,37 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Shizuku.App.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="600"
+             x:Class="Shizuku.App.Views.RippleScopeView"
+             x:DataType="vm:RippleScopeViewModel">
+
+    <DockPanel>
+        <!-- Controls bar -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="8" Spacing="12">
+            <TextBlock VerticalAlignment="Center" Text="Rate:" />
+            <TextBlock VerticalAlignment="Center"
+                       Text="{Binding SampleRateHz, StringFormat={}{0:N0} Hz}"/>
+
+            <TextBlock VerticalAlignment="Center" Text="Depth:" Margin="12,0,0,0"/>
+            <TextBlock VerticalAlignment="Center"
+                       Text="{Binding SampleDepth, StringFormat={}{0:N0}}"/>
+
+            <TextBlock VerticalAlignment="Center" Text="Trigger:" Margin="12,0,0,0"/>
+            <TextBlock VerticalAlignment="Center" Text="{Binding TriggerMode}"/>
+
+            <Button Content="Arm" Command="{Binding ArmCaptureCommand}" Margin="12,0,0,0"/>
+            <Button Content="Force" Command="{Binding ForceTriggerCommand}"/>
+
+            <TextBlock VerticalAlignment="Center" Opacity="0.6" Margin="12,0,0,0"
+                       Text="{Binding CaptureState, StringFormat=State: {0}}"/>
+        </StackPanel>
+
+        <!-- Waveform area placeholder -->
+        <Border Classes="card" Margin="8">
+            <TextBlock Text="[High-speed waveform will be rendered here via ScottPlot]"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.4"/>
+        </Border>
+    </DockPanel>
+</UserControl>

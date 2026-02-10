@@ -1,0 +1,264 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\tools\\Shizuku.Benchmarks\\Shizuku.Benchmarks.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj",
+        "projectName": "Shizuku.Core",
+        "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj",
+        "packagesPath": "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget",
+        "outputPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Foobis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Hardware\\Shizuku.Hardware.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Hardware\\Shizuku.Hardware.csproj",
+        "projectName": "Shizuku.Hardware",
+        "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Hardware\\Shizuku.Hardware.csproj",
+        "packagesPath": "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget",
+        "outputPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Hardware\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Foobis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj": {
+                "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Services\\Shizuku.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Services\\Shizuku.Services.csproj",
+        "projectName": "Shizuku.Services",
+        "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Services\\Shizuku.Services.csproj",
+        "packagesPath": "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget",
+        "outputPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Foobis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj": {
+                "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj"
+              },
+              "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Hardware\\Shizuku.Hardware.csproj": {
+                "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Hardware\\Shizuku.Hardware.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\tools\\Shizuku.Benchmarks\\Shizuku.Benchmarks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\tools\\Shizuku.Benchmarks\\Shizuku.Benchmarks.csproj",
+        "projectName": "Shizuku.Benchmarks",
+        "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\tools\\Shizuku.Benchmarks\\Shizuku.Benchmarks.csproj",
+        "packagesPath": "C:\\Users\\Foobis\\AppData\\Local\\Temp\\cursor-sandbox-cache\\07e743e99ab40fd5dd77411967b4a5ad\\nuget",
+        "outputPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\tools\\Shizuku.Benchmarks\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Foobis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj": {
+                "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Core\\Shizuku.Core.csproj"
+              },
+              "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Services\\Shizuku.Services.csproj": {
+                "projectPath": "C:\\Users\\Foobis\\Documents\\project\\Better-Shizuku-Toolbox\\src\\Shizuku.Services\\Shizuku.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
